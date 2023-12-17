@@ -2,8 +2,6 @@ import React from 'react'
 import Info from '@/about/components/info'
 
 type Props = {
-    f1: string,
-    f2: number
 }
 
 const about = (props: Props) => {
