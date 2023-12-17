@@ -1,0 +1,10 @@
+import React from 'react'
+
+type Props = {}
+
+const page = (props: Props) => {
+  return (
+    <div>balabalabalaba</div>
+  )
+}
+export default page
