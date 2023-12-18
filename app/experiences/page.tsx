@@ -1,5 +1,5 @@
 import React from 'react'
-import Info from '@/about/components/info'
+import Info from '@/experiences/components/info'
 
 type Props = {
 }

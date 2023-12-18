@@ -1,8 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Montserrat, Caveat, Merienda } from 'next/font/google'
 import './globals.css'
+import Image from 'next/image'
+import SiyanwuName from './components/name'
+import Navbar from './components/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const mont = Montserrat({ subsets: ['latin'] })
+const caveat = Caveat({ subsets: ['latin'] })
+const merienda = Merienda({ subsets: ['latin'] })
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,14 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className='bg-gray-200 h-screen m-2 flex flex-col items-center'>
-          <div className='bg-gray-300 h-20 w-60'>
-            this is root layout
-          </div>
-
-          <div className='bg-gray-400 h-32 w-40'>
-           {children}
+      <body className={caveat.className}>
+        <div className='flex flex-col min-w-screen'>
+          {/* NAV BAR */}
+          <Navbar />
+          <div className={`${merienda.className} min-h-screen w-full pt-20 bg-gray-100`}>
+            {children}
           </div>
 
         </div>
